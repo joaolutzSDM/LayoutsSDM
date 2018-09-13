@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             telefoneLinearLayout.removeAllViewsInLayout();
-            emailArrayList = (ArrayList<Contato>) savedInstanceState.getSerializable(TELEFONE_VIEWS);
-            for(int i = 0; i < emailArrayList.size(); i++) {
+            telefoneArrayList = (ArrayList<Contato>) savedInstanceState.getSerializable(TELEFONE_VIEWS);
+            for(int i = 0; i < telefoneArrayList.size(); i++) {
                 adicionarTelefone(null);
                 ((EditText) telefoneLinearLayout.getChildAt(i).findViewById(R.id.telefoneEditText)).setText(telefoneArrayList.get(i).getTelefone());
                 ((Spinner) telefoneLinearLayout.getChildAt(i).findViewById(R.id.tipoTelefoneSpinner)).setSelection(telefoneArrayList.get(i).getTipoTelefone());
