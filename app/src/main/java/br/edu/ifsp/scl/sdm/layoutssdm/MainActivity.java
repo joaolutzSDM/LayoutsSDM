@@ -159,6 +159,10 @@ public class MainActivity extends AppCompatActivity {
         emailArrayList.clear();
         telefoneArrayList.clear();
 
+        //limpa os containers de layout com as views dinâmicas
+        emailLinearLayout.removeAllViews();
+        telefoneLinearLayout.removeAllViews();
+
         //limpa o checkbox e o radio group
         notificacoesCheckBox.setChecked(false);
         notificacoesRadioGroup.clearCheck();
